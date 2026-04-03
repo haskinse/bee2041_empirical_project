@@ -1,4 +1,7 @@
 pandas
-kagglehub
+numpy
+matplotlib
+seaborn
 spotipy
+kagglehub
 requests
