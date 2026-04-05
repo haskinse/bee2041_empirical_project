@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:            total_units   R-squared:                       1.000
+Model:                            OLS   Adj. R-squared:                    nan
+Method:                 Least Squares   F-statistic:                       nan
+Date:                Sun, 05 Apr 2026   Prob (F-statistic):                nan
+Time:                        15:06:28   Log-Likelihood:                 235.95
+No. Observations:                   8   AIC:                            -455.9
+Df Residuals:                       0   BIC:                            -455.3
+Df Model:                           7                                         
+Covariance Type:            nonrobust                                         
+========================================================================================
+                           coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------------
+const                    0.0193        inf          0        nan         nan         nan
+avg_tempo                0.4472        inf          0        nan         nan         nan
+avg_energy              -0.4730        inf         -0        nan         nan         nan
+avg_danceability        -0.4898        inf         -0        nan         nan         nan
+avg_duration_min         0.1232        inf          0        nan         nan         nan
+avg_valence              0.2147        inf          0        nan         nan         nan
+avg_acousticness        -0.1611        inf         -0        nan         nan         nan
+avg_instrumentalness    -0.4862        inf         -0        nan         nan         nan
+avg_liveness            -0.1324        inf         -0        nan         nan         nan
+avg_loudness            -0.0533        inf         -0        nan         nan         nan
+avg_speechiness          0.7173        inf          0        nan         nan         nan
+avg_explicit            -0.0246        inf         -0        nan         nan         nan
+==============================================================================
+Omnibus:                       12.430   Durbin-Watson:                   0.010
+Prob(Omnibus):                  0.002   Jarque-Bera (JB):                4.218
+Skew:                          -1.541   Prob(JB):                        0.121
+Kurtosis:                       4.775   Cond. No.                         355.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The input rank is higher than the number of observations.
