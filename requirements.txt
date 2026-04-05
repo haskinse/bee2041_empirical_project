@@ -2,6 +2,9 @@ pandas
 numpy
 matplotlib
 seaborn
+statsmodels
+beautifulsoup4
+requests
+lxml
 spotipy
 kagglehub
-requests
