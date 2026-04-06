@@ -3,8 +3,13 @@
 Dep. Variable:            total_units   R-squared:                       1.000
 Model:                            OLS   Adj. R-squared:                    nan
 Method:                 Least Squares   F-statistic:                       nan
+<<<<<<< HEAD
 Date:                Mon, 06 Apr 2026   Prob (F-statistic):                nan
 Time:                        18:30:08   Log-Likelihood:                 235.95
+=======
+Date:                Sun, 05 Apr 2026   Prob (F-statistic):                nan
+Time:                        15:06:28   Log-Likelihood:                 235.95
+>>>>>>> 05ae9fc28c25f0853449bb0aee8a84b7e3102f59
 No. Observations:                   8   AIC:                            -455.9
 Df Residuals:                       0   BIC:                            -455.3
 Df Model:                           7                                         

@@ -7903,22 +7903,6 @@ p, li {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div class="nav-buttons">
-<a href="#albums"><button>Most Successful Albums</button></a>
-<a href="#songs"><button>Most Successful Songs</button></a>
-<a href="#time"><button>How Features Changed</button></a>
-<a href="#success"><button>Features vs Success</button></a>
-<a href="#regression"><button>Regression Results</button></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Where-does-the-data-come-from?">Where does the data come from?<a class="anchor-link" href="#Where-does-the-data-come-from?">¶</a></h2><p>Data for this project came from a range of sources. Album-level success data was scraped from Wikipedia, while track-level data was collected from a Kaggle dataset and APIs from Spotify and Last.fm.</p>
 <p>Taylor Swift was an ideal artist to study because there is an unusually large amount of data available on her individual tracks. Features such as tempo, key and energy are available at song level, allowing for a much more detailed analysis than would be possible for many other artists.</p>
 </div>
@@ -7956,7 +7940,7 @@ p, li {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="center-figure">
-<img alt="Most successful Taylor Swift songs" src="output/figures/commercial_success/total_units.png"/>
+<img alt="Most successful Taylor Swift songs" src="output/figures/commercial_success/total_units_bar.png"/>
 </div>
 </div>
 </div>
@@ -8033,10 +8017,39 @@ p, li {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="figure-grid">
-<img alt="Tempo over time" src="output/figures/track_feature_time/track_tempo_time.png"/>
-<img alt="Energy over time" src="output/figures/track_feature_time/track_energy_time.png"/>
-<img alt="Danceability over time" src="output/figures/track_feature_time/track_danceability_time.png"/>
 <img alt="Acousticness over time" src="output/figures/track_feature_time/track_acousticness_time.png"/>
+<img alt="Danceability over time" src="output/figures/track_feature_time/track_danceability_time.png"/>
+<img alt="Duration in minutes over time" src="output/figures/track_feature_time/track_duration_min_time.png"/>
+<img alt="Energy over time" src="output/figures/track_feature_time/track_energy_time.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="figure-grid">
+<img alt="Explicitness over time" src="output/figures/track_feature_time/track_explicit_time.png"/>
+<img alt="Instrumentalness over time" src="output/figures/track_feature_time/track_instrumentalness_time.png"/>
+<img alt="Liveness over time" src="output/figures/track_feature_time/track_liveness_time.png"/>
+<img alt="Loudness over time" src="output/figures/track_feature_time/track_loudness_time.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="figure-grid">
+<img alt="Speechiness over time" src="output/figures/track_feature_time/track_speechiness_time.png"/>
+<img alt="Tempo over time" src="output/figures/track_feature_time/track_tempo_time.png"/>
+<img alt="Valence over time" src="output/figures/track_feature_time/track_valence_time.png"/>
 </div>
 </div>
 </div>
@@ -8079,10 +8092,39 @@ p, li {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="figure-grid">
-<img alt="Danceability vs success" src="output/figures/track_feature_success/track_danceability_success.png"/>
-<img alt="Energy vs success" src="output/figures/track_feature_success/track_energy_success.png"/>
-<img alt="Valence vs success" src="output/figures/track_feature_success/track_valence_success.png"/>
-<img alt="Speechiness vs success" src="output/figures/track_feature_success/track_speechiness_success.png"/>
+<img alt="Acousticness over time" src="output/figures/track_feature_success/track_acousticness_success.png"/>
+<img alt="Danceability over success" src="output/figures/track_feature_success/track_danceability_time.png"/>
+<img alt="Duration in minutes over success" src="output/figures/track_feature_success/track_duration_min_success.png"/>
+<img alt="Energy over success" src="output/figures/track_feature_success/track_energy_success.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="figure-grid">
+<img alt="Explicitness over success" src="output/figures/track_feature_success/track_explicit_success.png"/>
+<img alt="Instrumentalness over success" src="output/figures/track_feature_success/track_instrumentalness_success.png"/>
+<img alt="Liveness over success" src="output/figures/track_feature_success/track_liveness_success.png"/>
+<img alt="Loudness over success" src="output/figures/track_feature_success/track_loudness_success.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="figure-grid">
+<img alt="Speechiness over success" src="output/figures/track_feature_success/track_speechiness_success.png"/>
+<img alt="Tempo over success" src="output/figures/track_feature_success/track_tempo_success.png"/>
+<img alt="Valence over success" src="output/figures/track_feature_success/track_valence_success.png"/>
 </div>
 </div>
 </div>
@@ -8115,7 +8157,7 @@ p, li {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="center-figure">
-<img alt="Correlation matrix of track features and success" src="output/figures/correlation/track_correlation_matrix.png"/>
+<img alt="Correlation matrix of track features and success" src="output/figures/correlation/track_feature_correlations.png"/>
 </div>
 </div>
 </div>
@@ -8165,7 +8207,7 @@ p, li {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <div class="center-figure">
-<img alt="Regression results" src="output/figures/regression/baseline_model_table.png"/>
+<img alt="Regression results" src="output/figures/regressions/track_baseline_model.png"/>
 </div>
 </div>
 </div>
@@ -8212,7 +8254,88 @@ p, li {
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>[NbConvertApp] Converting notebook /content/drive/MyDrive/bee2041_empirical_project/blog.ipynb to html
-[NbConvertApp] Writing 297436 bytes to /content/drive/MyDrive/bee2041_empirical_project/docs/index.html
+[NbConvertApp] Writing 298769 bytes to /content/drive/MyDrive/bee2041_empirical_project/docs/index.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/content/drive/MyDrive/bee2041_empirical_project
+Reinitialized existing Git repository in /content/drive/MyDrive/bee2041_empirical_project/.git/
+Refresh index: 100% (176/176), done.
+On branch main
+Your branch is up to date with 'origin/main'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+	<span class="ansi-green-fg">new file:   README.md</span>
+	<span class="ansi-green-fg">new file:   output/figures/commercial_success/track_listens.png</span>
+	<span class="ansi-green-fg">new file:   requirements.txt</span>
+	<span class="ansi-green-fg">new file:   source_code/placeholder.txt</span>
+
+Unmerged paths:
+  (use "git add &lt;file&gt;..." to mark resolution)
+	<span class="ansi-red-fg">both added:      output/figures/commercial_success/page_length_bar.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/commercial_success/total_sales_bar.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/commercial_success/total_units_bar.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_acousticness_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_danceability_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_duration_min_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_energy_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_explicit_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_instrumentalness_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_liveness_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_loudness_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_speechiness_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_tempo_time.png</span>
+	<span class="ansi-red-fg">both added:      output/figures/track_feature_time/track_valence_time.png</span>
+	<span class="ansi-red-fg">both added:      output/regressions/album_baseline_model.txt</span>
+	<span class="ansi-red-fg">both added:      output/regressions/album_extended_model.txt</span>
+	<span class="ansi-red-fg">both added:      output/regressions/scaled_track_baseline_model.txt</span>
+	<span class="ansi-red-fg">both added:      output/regressions/track_baseline_model.txt</span>
+	<span class="ansi-red-fg">both added:      output/regressions/track_extended_model.txt</span>
+	<span class="ansi-red-fg">both added:      source_code/01_data_collection.ipynb</span>
+	<span class="ansi-red-fg">both added:      source_code/02_data_cleaning.ipynb</span>
+	<span class="ansi-red-fg">both added:      source_code/03_database_construction.ipynb</span>
+	<span class="ansi-red-fg">both added:      source_code/04_analysis.ipynb</span>
+
+Changes not staged for commit:
+  (use "git add/rm &lt;file&gt;..." to update what will be committed)
+  (use "git restore &lt;file&gt;..." to discard changes in working directory)
+	<span class="ansi-red-fg">modified:   blog.ipynb</span>
+	<span class="ansi-red-fg">modified:   docs/index.html</span>
+	<span class="ansi-red-fg">deleted:    docs/output/figures/correlation_matrices/track_features_success.png</span>
+	<span class="ansi-red-fg">deleted:    output/figures/correlation_matrices/album_features_success.png</span>
+	<span class="ansi-red-fg">deleted:    output/figures/correlation_matrices/track_features_success.png</span>
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+	<span class="ansi-red-fg">docs/output/figures/correlation_matrices/track_feature_correlations.png</span>
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Branch 'main' set up to track remote branch 'main' from 'origin'.
+Everything up-to-date
 </pre>
 </div>
 </div>

@@ -3,8 +3,13 @@
 Dep. Variable:          log_listeners   R-squared:                       0.048
 Model:                            OLS   Adj. R-squared:                 -0.034
 Method:                 Least Squares   F-statistic:                    0.5889
+<<<<<<< HEAD
 Date:                Mon, 06 Apr 2026   Prob (F-statistic):              0.835
 Time:                        18:30:06   Log-Likelihood:                -37.389
+=======
+Date:                Sun, 05 Apr 2026   Prob (F-statistic):              0.835
+Time:                        15:06:26   Log-Likelihood:                -37.389
+>>>>>>> 05ae9fc28c25f0853449bb0aee8a84b7e3102f59
 No. Observations:                 140   AIC:                             98.78
 Df Residuals:                     128   BIC:                             134.1
 Df Model:                          11                                         

@@ -3,8 +3,13 @@
 Dep. Variable:            total_units   R-squared (uncentered):                   0.978
 Model:                            OLS   Adj. R-squared (uncentered):              0.940
 Method:                 Least Squares   F-statistic:                              26.09
+<<<<<<< HEAD
 Date:                Mon, 06 Apr 2026   Prob (F-statistic):                      0.0112
 Time:                        18:30:08   Log-Likelihood:                         -11.308
+=======
+Date:                Sun, 05 Apr 2026   Prob (F-statistic):                      0.0112
+Time:                        15:06:28   Log-Likelihood:                         -11.308
+>>>>>>> 05ae9fc28c25f0853449bb0aee8a84b7e3102f59
 No. Observations:                   8   AIC:                                      32.62
 Df Residuals:                       3   BIC:                                      33.01
 Df Model:                           5                                                  
