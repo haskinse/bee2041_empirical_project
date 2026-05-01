@@ -39,34 +39,34 @@ st.header("How have the muscial features of Taylor Swift’s music changed over 
 feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicity", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"])
 
 if feature == "Acousticness":
-    st.image("output/figures/track_feature_time/album_acousticness_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_acousticness_time.png", width = 500)
 
 elif feature == "Danceability":
-    st.image("output/figures/track_feature_time/album_danceability_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_danceability_time.png", width = 500)
 
 elif feature == "Duration in Minutes":
-    st.image("output/figures/track_feature_time/album_duration_min_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_duration_min_time.png", width = 500)
 
 elif feature == "Energy":
-    st.image("output/figures/track_feature_time/album_energy_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_energy_time.png", width = 500)
 
 elif feature == "Explicity":
-    st.image("output/figures/track_feature_time/album_explicit_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_explicit_time.png", width = 500)
 
 elif feature == "Instrumentalness":
-    st.image("output/figures/track_feature_time/album_instrumentalness_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_instrumentalness_time.png", width = 500)
 
 elif feature == "Liveness":
-    st.image("output/figures/track_feature_time/album_liveness_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_liveness_time.png", width = 500)
 
 elif feature == "Loudness":
-    st.image("output/figures/track_feature_time/album_loudness_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_loudness_time.png", width = 500)
 
 elif feature == "Speechiness":
-    st.image("output/figures/track_feature_time/album_speechiness_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_speechiness_time.png", width = 500)
 
 elif feature == "Tempo":
-    st.image("output/figures/track_feature_time/album_tempo_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_tempo_time.png", width = 500)
 
 elif feature == "Valence":
-    st.image("output/figures/track_feature_time/album_valence_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_valence_time.png", width = 500)
