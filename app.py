@@ -18,6 +18,12 @@ st.write("""It’s hard to definitively define what ‘success’ means for a mu
 
 In this project, success is measured in two ways. At the album level, it is measured using units sold (from Wikipedia), while at the track level it is measured using listener and play counts from Last.fm. These metrics make success easier to quantify, and using multiple measures gives a more balanced view. However, this approach still has limitations, as it may miss more nuanced aspects of success, such as cultural impact or critical reception.""")
 
+st.subheader("Which of Taylor Swift’s albums have been the most successful?")
+
+st.write("""The most successful album by a clear margin is 1989, with just under 16 million certified units across the US and UK. Most of this comes from the original release, with a smaller contribution from the Taylor’s Version re release.
+
+More broadly, album success looks fairly consistent across Swift’s career. While earlier albums tend to have higher total unit counts, they have also had more time to build up certifications. Because of this, it is hard to say that earlier music was necessarily more successful, as it may simply reflect how long it has been out.""")
+
 st.image("output/figures/commercial_success/total_units_bar.png", caption="My chart")
 
 if st.button("Show insight"):
