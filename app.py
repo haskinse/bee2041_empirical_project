@@ -40,7 +40,7 @@ st.write("""Taylor Swift is often described as a “chameleon” because she’s
 
 However, when you look at measurable track features, her music is often more consistent over time than this might suggest.""")
 
-feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicity", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"])
+feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicit", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"], key = track_feature_time_selectbox)
 
 if feature == "Acousticness":
     st.image("output/figures/track_feature_time/track_acousticness_time.png", width = 500)
@@ -54,7 +54,7 @@ elif feature == "Duration in Minutes":
 elif feature == "Energy":
     st.image("output/figures/track_feature_time/track_energy_time.png", width = 500)
 
-elif feature == "Explicity":
+elif feature == "Explicit":
     st.image("output/figures/track_feature_time/track_explicit_time.png", width = 500)
 
 elif feature == "Instrumentalness":
@@ -79,7 +79,7 @@ st.header("How are these features related to success")
 
 st.write("To explore whether musical features influence popularity, I plotted each feature against track success, measured using log listeners. If certain features consistently made songs more successful, these graphs should show clear upward or downward patterns.")
 
-feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicity", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"])
+feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicit", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"], key = track_feature_success_selectbox)
 
 if feature == "Acousticness":
     st.image("output/figures/track_feature_success/track_acousticness_success.png", width = 500)
@@ -93,7 +93,7 @@ elif feature == "Duration in Minutes":
 elif feature == "Energy":
     st.image("output/figures/track_feature_success/track_energy_success.png", width = 500)
 
-elif feature == "Explicity":
+elif feature == "Explicit":
     st.image("output/figures/track_feature_success/track_explicit_success.png", width = 500)
 
 elif feature == "Instrumentalness":
