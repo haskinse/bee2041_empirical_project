@@ -42,5 +42,5 @@ feature = st.selectbox(
 )
 
 if feature == "Danceability":
-    st.image("output/figures/track_feature_time/track_danceability_time.png")
+    st.image("output/figures/track_feature_time/track_danceability_time.png", width = 500)
     st.write("Danceability shows how suitable a track is for dancing.")
