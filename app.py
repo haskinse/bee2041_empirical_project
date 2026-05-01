@@ -34,7 +34,11 @@ Among the very top songs, 1989 stands out in particular, although there is still
 
 st.image("output/figures/commercial_success/top_20_track_listens.png", caption="My chart")
 
-st.header("How have the muscial features of Taylor Swift’s music changed over time?")
+st.header("How have the musical features of Taylor Swift’s music changed over time?")
+
+st.write("""Taylor Swift is often described as a “chameleon” because she’s constantly shifting her sound and genre. Her earlier albums, like Taylor Swift and Fearless, are clearly country, while albums like 1989 and Red move much more into pop. More recent work explores indie, folk-pop and alternative styles.
+
+However, when you look at measurable track features, her music is often more consistent over time than this might suggest.""")
 
 feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicity", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"])
 
