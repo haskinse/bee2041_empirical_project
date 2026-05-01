@@ -34,13 +34,39 @@ Among the very top songs, 1989 stands out in particular, although there is still
 
 st.image("output/figures/commercial_success/top_20_track_listens.png", caption="My chart")
 
-st.header("How has Taylor Swift’s music changed?")
+st.header("How have the muscial features of Taylor Swift’s music changed over time?")
 
-feature = st.selectbox(
-    "Choose a musical feature:",
-    ["Danceability", "Energy", "Valence", "Tempo", "Acousticness"]
-)
+feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicity", "Instrumentalness", "Liveness"])
 
-if feature == "Danceability":
-    st.image("output/figures/track_feature_time/track_danceability_time.png", width = 500)
-    st.write("Danceability shows how suitable a track is for dancing.")
+if feature == "Acousticness":
+    st.image("output/figures/track_feature_time/album_acousticness_time.png", width = 500)
+
+elif feature == "Danceability":
+    st.image("output/figures/track_feature_time/album_danceability_time.png", width = 500)
+
+elif feature == "Duration in Minutes":
+    st.image("output/figures/track_feature_time/album_duration_min_time.png", width = 500)
+
+elif feature == "Energy":
+    st.image("output/figures/track_feature_time/album_energy_time.png", width = 500)
+
+elif feature == "Explicity":
+    st.image("output/figures/track_feature_time/album_explicit_time.png", width = 500)
+
+elif feature == "Instrumentalness":
+    st.image("output/figures/track_feature_time/album_instrumentalness_time.png", width = 500)
+
+elif feature == "Liveness":
+    st.image("output/figures/track_feature_time/album_liveness_time.png", width = 500)
+
+elif feature == "Loudness":
+    st.image("output/figures/track_feature_time/album_loudness_time.png", width = 500)
+
+elif feature == "Speechiness":
+    st.image("output/figures/track_feature_time/album_speechiness_time.png", width = 500)
+
+elif feature == "Tempo":
+    st.image("output/figures/track_feature_time/album_tempo_time.png", width = 500)
+
+elif feature == "Valence":
+    st.image("output/figures/track_feature_time/album_valence_time.png", width = 500)
