@@ -32,7 +32,7 @@ st.write("""Looking at individual tracks, a small number of songs dominate total
 
 Among the very top songs, 1989 stands out in particular, although there is still a fairly balanced spread across albums overall. As before, older songs have had more time to build up listens, so this likely explains part of the pattern.""")
 
-st.image("output/figures/commercial_success/top_16_track_listens.png", caption="My chart")
+st.image("output/figures/commercial_success/all_track_listens.png", caption="My chart")
 
 if st.button("Show insight"):
     st.write("Higher energy songs tend to have more streams.")
