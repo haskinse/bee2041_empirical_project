@@ -12,6 +12,12 @@ st.write("""Taylor Swift is a good artist to study because there’s an unusuall
 
 The data for this project comes from a mix of sources. Album-level success data was scraped from Wikipedia, while track-specific features were taken from a Kaggle dataset. Tracks were then standardised and matched with Spotify data to ensure accuracy, before being combined with play count and listener data from Last.fm.""")
 
+st.subheader("What is 'success'?")
+
+st.write("""It’s hard to definitively define what ‘success’ means for a musical artist, and therefore how it should be measured. There are a variety of possible metrics. Some are quantitative, such as commercial success or number of awards, while others are more qualitative, like cultural impact or recognition. For example, while Taylor Swift’s albums are often extremely commercially successful, it could be argued that other projects, such as Charli XCX’s Brat, have had a more intense cultural impact.
+
+In this project, success is measured in two ways. At the album level, it is measured using units sold (from Wikipedia), while at the track level it is measured using listener and play counts from Last.fm. These metrics make success easier to quantify, and using multiple measures gives a more balanced view. However, this approach still has limitations, as it may miss more nuanced aspects of success, such as cultural impact or critical reception.""")
+
 st.image("output/figures/commercial_success/total_units_bar.png", caption="My chart")
 
 if st.button("Show insight"):
