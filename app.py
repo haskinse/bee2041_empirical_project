@@ -26,5 +26,13 @@ More broadly, album success looks fairly consistent across Swift’s career. Whi
 
 st.image("output/figures/commercial_success/total_units_bar.png", caption="My chart")
 
+st.subheader("Which of Taylor Swift’s songs have been the most successful?")
+
+st.write("""Looking at individual tracks, a small number of songs dominate total listeners, while the majority receive far fewer. This creates a clear “long tail” pattern, where only a few songs become extremely large hits.
+
+Among the very top songs, 1989 stands out in particular, although there is still a fairly balanced spread across albums overall. As before, older songs have had more time to build up listens, so this likely explains part of the pattern.""")
+
+st.image("output/figures/commercial_success/top_16_track_listens.png", caption="My chart")
+
 if st.button("Show insight"):
     st.write("Higher energy songs tend to have more streams.")
