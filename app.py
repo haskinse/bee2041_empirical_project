@@ -112,4 +112,4 @@ elif feature == "Tempo":
     st.image("output/figures/track_feature_success/track_tempo_success.png", width = 500)
 
 elif feature == "Valence":
-    st.image("output/figures/track_feature_time/track_valence_time.png", width = 500)
+    st.image("output/figures/track_feature_success/track_valence_success.png", width = 500)
