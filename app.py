@@ -42,21 +42,5 @@ feature = st.selectbox(
 )
 
 if feature == "Danceability":
-    st.image("output/figures/audio_features/danceability.png")
+    st.image("output/figures/track_feature_time/track_danceability_time.png")
     st.write("Danceability shows how suitable a track is for dancing.")
-
-elif feature == "Energy":
-    st.image("output/figures/audio_features/energy.png")
-    st.write("Energy captures how intense or active a track feels.")
-
-elif feature == "Valence":
-    st.image("output/figures/audio_features/valence.png")
-    st.write("Valence measures how positive or happy a track sounds.")
-
-elif feature == "Tempo":
-    st.image("output/figures/audio_features/tempo.png")
-    st.write("Tempo measures the speed of the song in beats per minute.")
-
-elif feature == "Acousticness":
-    st.image("output/figures/audio_features/acousticness.png")
-    st.write("Acousticness measures how acoustic a song sounds.")
