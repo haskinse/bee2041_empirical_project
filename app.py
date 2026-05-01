@@ -36,7 +36,7 @@ st.image("output/figures/commercial_success/top_20_track_listens.png", caption="
 
 st.header("How have the muscial features of Taylor Swift’s music changed over time?")
 
-feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicity", "Instrumentalness", "Liveness"])
+feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicity", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"])
 
 if feature == "Acousticness":
     st.image("output/figures/track_feature_time/album_acousticness_time.png", width = 500)
