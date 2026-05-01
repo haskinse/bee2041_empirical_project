@@ -82,7 +82,7 @@ st.write("To explore whether musical features influence popularity, I plotted ea
 feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicit", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"], key = "track_feature_success_selectbox")
 
 if feature == "Acousticness":
-    st.image("output/figures/track_feature_success/track_acousticness_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_acousticness_success.png", width = 500, height = 250)
 
 elif feature == "Danceability":
     st.image("output/figures/track_feature_success/track_danceability_success.png", width = 500)
