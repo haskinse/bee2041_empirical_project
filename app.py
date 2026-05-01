@@ -34,5 +34,29 @@ Among the very top songs, 1989 stands out in particular, although there is still
 
 st.image("output/figures/commercial_success/top_20_track_listens.png", caption="My chart")
 
-if st.button("Show insight"):
-    st.write("Higher energy songs tend to have more streams.")
+st.header("How has Taylor Swift’s music changed?")
+
+feature = st.selectbox(
+    "Choose a musical feature:",
+    ["Danceability", "Energy", "Valence", "Tempo", "Acousticness"]
+)
+
+if feature == "Danceability":
+    st.image("output/figures/audio_features/danceability.png")
+    st.write("Danceability shows how suitable a track is for dancing.")
+
+elif feature == "Energy":
+    st.image("output/figures/audio_features/energy.png")
+    st.write("Energy captures how intense or active a track feels.")
+
+elif feature == "Valence":
+    st.image("output/figures/audio_features/valence.png")
+    st.write("Valence measures how positive or happy a track sounds.")
+
+elif feature == "Tempo":
+    st.image("output/figures/audio_features/tempo.png")
+    st.write("Tempo measures the speed of the song in beats per minute.")
+
+elif feature == "Acousticness":
+    st.image("output/figures/audio_features/acousticness.png")
+    st.write("Acousticness measures how acoustic a song sounds.")
