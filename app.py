@@ -74,3 +74,42 @@ elif feature == "Tempo":
 
 elif feature == "Valence":
     st.image("output/figures/track_feature_time/track_valence_time.png", width = 500)
+
+st.header("How are these features related to success")
+
+st.write("To explore whether musical features influence popularity, I plotted each feature against track success, measured using log listeners. If certain features consistently made songs more successful, these graphs should show clear upward or downward patterns.")
+
+feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicity", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"])
+
+if feature == "Acousticness":
+    st.image("output/figures/track_feature_success/track_acousticness_success.png", width = 500)
+
+elif feature == "Danceability":
+    st.image("output/figures/track_feature_success/track_danceability_success.png", width = 500)
+
+elif feature == "Duration in Minutes":
+    st.image("output/figures/track_feature_success/track_duration_min_success.png", width = 500)
+
+elif feature == "Energy":
+    st.image("output/figures/track_feature_success/track_energy_success.png", width = 500)
+
+elif feature == "Explicity":
+    st.image("output/figures/track_feature_success/track_explicit_success.png", width = 500)
+
+elif feature == "Instrumentalness":
+    st.image("output/figures/track_feature_success/track_instrumentalness_success.png", width = 500)
+
+elif feature == "Liveness":
+    st.image("output/figures/track_feature_success/track_liveness_success.png", width = 500)
+
+elif feature == "Loudness":
+    st.image("output/figures/track_feature_success/track_loudness_success.png", width = 500)
+
+elif feature == "Speechiness":
+    st.image("output/figures/track_feature_success/track_speechiness_success.png", width = 500)
+
+elif feature == "Tempo":
+    st.image("output/figures/track_feature_success/track_tempo_success.png", width = 500)
+
+elif feature == "Valence":
+    st.image("output/figures/track_feature_time/track_valence_time.png", width = 500)
