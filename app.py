@@ -41,15 +41,10 @@ elif metric == "Wikipedia Page Length":
 st.divider()
 
 st.header("Which songs have the most listeners?")
-
-st.write("""Looking at individual tracks, a small number of songs dominate total listeners, while the majority receive far fewer. This creates a clear “long tail” pattern, where only a few songs become extremely large hits.
-
-Among the very top songs, 1989 stands out in particular, although there is still a fairly balanced spread across albums overall. As before, older songs have had more time to build up listens, so this likely explains part of the pattern.""")
-
+st.write("Unsurprisingly, the most popular songs tend to come from her most successful albums, with six of the top ten coming from 1989 and Fearless. Her most popular song by far, with around 1.8 million listeners, is Blank Space. Interestingly, two of the top ten come from Folklore, one of her less commercially successful albums, which highlights how strong her catalogue is overall.")
 st.image("output/figures/commercial_success/top_tracks/top_10_track_listeners_table.png")
-
+st.write("Looking at listener numbers across all of her songs, this consistency becomes even clearer. While there are standout tracks like Blank Space, most of her songs sit in a fairly tight range, with roughly 500,000 to 1,000,000 listeners. The spread of albums across the top-performing tracks reinforces this, showing that her success isn’t limited to just one era.")      
 top_n = st.slider("Choose how many top songs to show:", min_value = 10, max_value = 220, value = 20, step = 10, key = "top_tracks_slider")
-
 st.image(f"output/figures/commercial_success/top_tracks/top_{top_n}_track_listens.png")
 
 st.divider()
