@@ -121,3 +121,17 @@ elif feature == "Valence":
     st.image("output/figures/track_feature_success/track_valence_success.png")
 
 st.header("Which songs have the most listeners?")
+
+top_n = st.slider(
+    "Choose how many top songs to show:",
+    min_value=10,
+    max_value=220,
+    value=20,
+    step=10,
+    key="top_tracks_slider"
+)
+
+st.image(
+    f"output/figures/commercial_success/top_tracks/top_{top_n}_track_listens.png",
+    use_container_width=True
+)
