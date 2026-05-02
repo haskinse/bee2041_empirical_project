@@ -57,7 +57,7 @@ However, when you look at measurable track features, her music is often more con
 feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicit", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"], key = "track_feature_time_selectbox")
 
 if feature == "Acousticness":
-    st.image("output/figures/track_feature_time/track_acousticness_time.png", width = 500)
+    st.image("output/figures/track_feature_time/track_acousticness_time.png")
 
 elif feature == "Danceability":
     st.image("output/figures/track_feature_time/track_danceability_time.png", width = 500)
@@ -101,31 +101,31 @@ if feature == "Acousticness":
     st.image("output/figures/track_feature_success/track_acousticness_success.png")
 
 elif feature == "Danceability":
-    st.image("output/figures/track_feature_success/track_danceability_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_danceability_success.png")
 
 elif feature == "Duration in Minutes":
-    st.image("output/figures/track_feature_success/track_duration_min_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_duration_min_success.png")
 
 elif feature == "Energy":
-    st.image("output/figures/track_feature_success/track_energy_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_energy_success.png")
 
 elif feature == "Explicit":
-    st.image("output/figures/track_feature_success/track_explicit_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_explicit_success.png")
 
 elif feature == "Instrumentalness":
-    st.image("output/figures/track_feature_success/track_instrumentalness_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_instrumentalness_success.png")
 
 elif feature == "Liveness":
-    st.image("output/figures/track_feature_success/track_liveness_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_liveness_success.png")
 
 elif feature == "Loudness":
-    st.image("output/figures/track_feature_success/track_loudness_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_loudness_success.png")
 
 elif feature == "Speechiness":
-    st.image("output/figures/track_feature_success/track_speechiness_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_speechiness_success.png")
 
 elif feature == "Tempo":
-    st.image("output/figures/track_feature_success/track_tempo_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_tempo_success.png")
 
 elif feature == "Valence":
-    st.image("output/figures/track_feature_success/track_valence_success.png", width = 500)
+    st.image("output/figures/track_feature_success/track_valence_success.png")
