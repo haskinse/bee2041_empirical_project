@@ -1,5 +1,9 @@
 import streamlit as st
 
+st.set_page_config(page_title = "What Makes a Taylor Swift Song Successful?", page_icon = "🎵", layout = "wide")
+
+TEXT_WIDTH = 750
+
 st.title("What Makes a Taylor Swift Song Successful?")
 
 st.write("""Taylor Swift is one of the most successful music artists of all time. She’s sold over 100 million album units, multiple of her songs have passed one billion streams, and she’s the highest-grossing live music artist. But what actually drives her success? Is there something in the music itself that explains it, or is it something else entirely?
