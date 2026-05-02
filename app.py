@@ -92,8 +92,8 @@ elif feature == "Valence":
 st.divider()
 
 st.header("How are these features related to success?")
-
-st.write("To explore whether musical features influence popularity, I plotted each feature against track success, measured using log listeners. If certain features consistently made songs more successful, these graphs should show clear upward or downward patterns.")
+st.write("In this case, log listeners are used as a measure of track success. Looking across the different musical features, most of the trend lines are close to flat, with no clear pattern suggesting that any one characteristic consistently drives success.")
+st.write("This points to a broader idea: Taylor Swift’s success doesn’t seem to come from any single feature. Instead, it’s likely the result of a combination of factors, many of which aren’t fully captured by these audio metrics alone.")
 
 feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicit", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"], key = "track_feature_success_selectbox")
 
@@ -133,12 +133,22 @@ elif feature == "Valence":
 st.divider()
 
 st.header("How correlated are muscial features?")
-
+st.write("Looking at correlation coefficients between musical features and log listeners confirms what the graphs suggested: relationships are very weak, with values ranging from around -0.13 to 0.17. There’s no strong linear relationship between any single feature and success.")
+st.write("Looking at correlations between the features themselves, more expected patterns show up. Energy and loudness are strongly positively correlated, while loudness and acousticness are strongly negatively correlated. This is important for the regression, as high correlation between explanatory variables can make it harder to isolate their individual effects.")
 st.image("output/figures/correlation_matrices/track_features_success.png")
 
 st.divider()
 
 st.header("Multiple Linear Regression")
-
+st.write("Running the regression, the standardised coefficients are very small, ranging from around -0.04 to 0.06. This suggests that musical features on their own do not explain much of the variation in song success.")
+st.write("To balance interpretability and completeness, a smaller baseline model is used alongside a more extended specification. While the baseline model focuses on a few key features, the extended model includes a wider set of variables as a robustness check. In both cases, the overall conclusion remains the same: the relationships are weak.")
+st.write("It’s also important to be clear about the limitations of this approach. With only around 220 tracks, the dataset is relatively small, and there is a risk of omitted variable bias. Factors such as marketing, playlist placement, and broader cultural context are not included in the model, but are likely to influence success. If these omitted factors are correlated with the included audio features, the estimated coefficients may be biased.")
 st.image("output/figures/regressions/scaled_track_coefficients.png")
 
+st.divider()
+
+st.header("Conclusions")
+st.write("Overall, there’s very little evidence that any single musical feature drives the success of a Taylor Swift song. Across the analysis, relationships between features and listener numbers are consistently weak, and even when combining multiple variables in a regression, the effects remain small.")
+st.write("Instead, her success looks much more consistent and widespread. Both at the album and track level, there isn’t really a clear divide between “hits” and “failures”, but rather a large number of songs that all perform well. This suggests that her success is less about specific characteristics of individual songs, and more about broader factors.")
+st.write("These likely include timing, marketing, fanbase strength, and cultural relevance, none of which are fully captured by the data used here. More importantly, even if stronger statistical relationships were found, this would not necessarily imply causality without a more robust research design.")
+st.write("Ultimately, Taylor Swift’s success doesn’t seem to come down to any one feature or formula. If anything, the consistency across her catalogue suggests that it’s the combination of factors around the music, rather than the measurable properties of the music itself, that matters most.")
