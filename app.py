@@ -3,35 +3,30 @@ import streamlit as st
 st.set_page_config(page_title = "What Makes a Taylor Swift Song Successful?", page_icon = "🎵")
 
 st.title("What Makes a Taylor Swift Song Successful?")
-
-st.write("""Taylor Swift is one of the most successful music artists of all time. She’s sold over 100 million album units, multiple of her songs have passed one billion streams, and she’s the highest-grossing live music artist. But what actually drives her success? Is there something in the music itself that explains it, or is it something else entirely?
-
-This blog looks at the musical features of her songs to see whether certain characteristics are linked to success. Are there patterns in which tracks become hugely popular while others don’t, or is her success about more than just the music?""")
+st.write("Taylor Swift is one of the most successful music artists of all time. She’s sold over 100 million album units, multiple songs have passed one billion streams, and she’s the highest-grossing live music artist. But what actually drives that success? Is it something in the music itself, or is it something else entirely?")
+st.write("This blog looks at the musical features of her songs to see whether certain characteristics are linked to success. More specifically, it focuses on correlation rather than causation, asking whether patterns in the data can help explain why some tracks perform better than others.")
 
 st.divider()
 
 st.header("Where did my data come from?")
-
-st.write("""Taylor Swift is a good artist to study because there’s an unusually large amount of data available on her individual tracks. While platforms like Spotify no longer allow public access to detailed audio features such as tempo, key and energy, her dedicated fanbase means this information is still available at the song level. This allows for a much more detailed analysis than would be possible for most artists.
-
-The data for this project comes from a mix of sources. Album-level success data was scraped from Wikipedia, while track-specific features were taken from a Kaggle dataset. Tracks were then standardised and matched with Spotify data to ensure accuracy, before being combined with play count and listener data from Last.fm.""")
+st.write("Taylor Swift is a great artist to study because there’s an unusually large amount of data available on her individual tracks. While platforms like Spotify no longer allow public access to detailed audio features such as tempo, key and energy, her dedicated fanbase means this information is still available at the song level. That makes a much more detailed analysis possible than for most artists.")
+st.write("The data for this project comes from a mix of sources. Album-level success data was scraped from Wikipedia, while track features were taken from a Kaggle dataset. Tracks were then standardised and matched with Spotify data to improve consistency, before being combined with play count and listener data from Last.fm.")
 
 st.divider()
 
 st.header("How should we define success?")
+st.write("It’s hard to pin down what “success” actually means for a musical artist, and therefore how to measure it. There are lots of possible metrics. Some are quantitative, like sales or awards, while others are more qualitative, like cultural impact or recognition. For example, while Taylor Swift’s albums are often extremely commercially successful, you could argue that other projects, like Charli XCX’s Brat, have had a stronger cultural impact.")
+st.write("In this project, success is measured in a few different ways. At the album level, it’s based on certified units and total sales. As a rough proxy for cultural impact, Wikipedia page length is also used, although this is only an approximation. At the track level, success is measured using listener and play counts from Last.fm.")
+st.write("Using multiple measures makes success easier to quantify and gives a more balanced view. That said, it still has limitations, as it can miss more nuanced aspects like critical reception.")
 
-st.write("""It’s hard to definitively define what ‘success’ means for a musical artist, and therefore how it should be measured. There are a variety of possible metrics. Some are quantitative, such as commercial success or number of awards, while others are more qualitative, like cultural impact or recognition. For example, while Taylor Swift’s albums are often extremely commercially successful, it could be argued that other projects, such as Charli XCX’s Brat, have had a more intense cultural impact.
-
-In this project, success is measured in a number of ways. At the album level, it is measured using certified units and total sales. As a rough proxy for cultural impact wikipedia page length it utilised, although this only gives a rough idea. At the track level success is measured using listener and play counts from Last.fm. These metrics make success easier to quantify, and using multiple measures gives a more balanced view. However, this approach still has limitations, as it may miss more nuanced aspects of success, such as critical reception.""")
 
 st.divider()
 
 st.header("Which of Taylor Swift’s albums have been the most successful?")
-
-st.write("""The most successful album by a clear margin is 1989, with just under 16 million certified units across the US and UK. Most of this comes from the original release, with a smaller contribution from the Taylor’s Version re release.
-
-More broadly, album success looks fairly consistent across Swift’s career. While earlier albums tend to have higher total unit counts, they have also had more time to build up certifications. Because of this, it is hard to say that earlier music was necessarily more successful, as it may simply reflect how long it has been out.""")
-
+st.write("Taylor Swift’s most commercially successful album, by both sales and certified units, is 1989, followed by her second album, Fearless. When combined with the re-released Taylor’s Version, 1989 has over 20 million certified units and around $10 million in certified sales.")
+st.write("Looking at Wikipedia page length instead, Folklore comes out on top, although it’s closely followed by 1989. This suggests that despite slightly weaker commercial performance, Folklore may have had a stronger cultural impact or at least generated more discussion.")
+st.write("The most striking feature of the data, though, is how consistent her success has been across her career. Even her lowest-performing album, Evermore, still has over four million certified units, going 4× platinum in the United States. Unlike many other artists, Swift has largely avoided a true “flop era.")
+    
 metric = st.segmented_control("Choose success measure:", ["Units", "Sales", "Wikipedia Page Length"], default = "Units")
 
 if metric == "Units":
