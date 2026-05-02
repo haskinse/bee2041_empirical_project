@@ -5,7 +5,7 @@ This project explores what drives the success of Taylor Swift’s music using tr
 
 ## Blog / Output
 You can view the final blog here:  
-[INSERT YOUR STREAMLIT LINK]
+https://haskinse-bee2041empiricalproject.streamlit.app
 
 ## Project Structure
 
