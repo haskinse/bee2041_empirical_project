@@ -38,16 +38,6 @@ st.image("output/figures/commercial_success/total_units_bar.png")
 
 st.divider()
 
-st.header("Which of Taylor Swift’s songs have been the most successful?")
-
-st.write("""Looking at individual tracks, a small number of songs dominate total listeners, while the majority receive far fewer. This creates a clear “long tail” pattern, where only a few songs become extremely large hits.
-
-Among the very top songs, 1989 stands out in particular, although there is still a fairly balanced spread across albums overall. As before, older songs have had more time to build up listens, so this likely explains part of the pattern.""")
-
-st.image("output/figures/commercial_success/top_20_track_listens.png")
-
-st.divider()
-
 st.header("How have the musical features of Taylor Swift’s music changed over time?")
 
 st.write("""Taylor Swift is often described as a “chameleon” because she’s constantly shifting her sound and genre. Her earlier albums, like Taylor Swift and Fearless, are clearly country, while albums like 1989 and Red move much more into pop. More recent work explores indie, folk-pop and alternative styles.
