@@ -50,10 +50,9 @@ st.image(f"output/figures/commercial_success/top_tracks/top_{top_n}_track_listen
 st.divider()
 
 st.header("How have the musical features of Taylor Swift’s music changed over time?")
-
-st.write("""Taylor Swift is often described as a “chameleon” because she’s constantly shifting her sound and genre. Her earlier albums, like Taylor Swift and Fearless, are clearly country, while albums like 1989 and Red move much more into pop. More recent work explores indie, folk-pop and alternative styles.
-
-However, when you look at measurable track features, her music is often more consistent over time than this might suggest.""")
+st.write("Taylor Swift is often described as a “chameleon” because she’s constantly shifting her sound and genre. Her earlier albums, like Taylor Swift and Fearless, are clearly country, while albums like 1989 and Red move much more into pop. More recent work explores indie, folk-pop and alternative styles.")
+st.write("However, when you look at measurable track features, her music is more consistent over time than this might suggest. Key metrics like danceability, tempo and valence do vary between albums, but there’s no clear overall trend.")
+st.write("There are a couple of exceptions. The share of explicit tracks has increased in more recent albums, particularly from Folklore onwards. Acousticness also shows the biggest shifts between albums, reflecting how she moves between more stripped-back, acoustic sounds and more produced, studio-heavy tracks.")
 
 feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicit", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"], key = "track_feature_time_selectbox")
 
