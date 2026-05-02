@@ -1,5 +1,6 @@
+# set the theme for my streamlit blogpost
 [theme]
-primaryColor = "#f6b0cc"
+primaryColor = "#b5e5f9"
 backgroundColor = "#ffffff"
 secondaryBackgroundColor = "#f5f5f5"
 textColor = "#262730"
