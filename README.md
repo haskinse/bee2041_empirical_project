@@ -1,6 +1,4 @@
-# bee2041_empirical_project
-
-# What makes a Taylor Swift song successful?
+# bee2041_empirical_project - What makes a Taylor Swift song successful?
 
 ## This porject explores what drives the success of Taylor Swift's music.
 
