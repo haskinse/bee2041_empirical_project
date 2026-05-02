@@ -138,3 +138,11 @@ elif feature == "Tempo":
 
 elif feature == "Valence":
     st.image("output/figures/track_feature_success/track_valence_success.png")
+
+st.divider()
+
+st.header("How correlated are the muscial features?")
+
+st.image("output/figures/correlation_matrices/track_features_success.png")
+
+
