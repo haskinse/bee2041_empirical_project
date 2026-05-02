@@ -34,8 +34,17 @@ st.write("""The most successful album by a clear margin is 1989, with just under
 
 More broadly, album success looks fairly consistent across Swift’s career. While earlier albums tend to have higher total unit counts, they have also had more time to build up certifications. Because of this, it is hard to say that earlier music was necessarily more successful, as it may simply reflect how long it has been out.""")
 
-st.image("output/figures/commercial_success/total_units_bar.png")
+metric = st.segmented_control("Choose success measure:", ["Units", "Sales", "Wikipedia Page Length"], default = "Units")
 
+if metric == "Units":
+    st.image("output/figures/commercial_success/total_units_bar.png", use_container_width=True)
+
+elif metric == "Sales":
+    st.image("output/figures/commercial_success/total_sales_bar.png", use_container_width=True)
+
+elif metric == "Wikipedia Page Length":
+    st.image("output/figures/commercial_success/page_length_bar.png", use_container_width=True)
+    
 st.divider()
 
 st.header("Which songs have the most listeners?")
