@@ -13,8 +13,8 @@ https://haskinse-bee2041empiricalproject.streamlit.app
   - configuration files and assets for the Streamlit app  
 
 - data/  
-  - raw/          # original datasets (Kaggle, scraped data)  
-  - clean/        # cleaned datasets used for analysis  
+  - raw/ # original datasets (Kaggle, scraped data)  
+  - clean/ # cleaned datasets used for analysis  
 
 - docs/  
   - images and files used in the blog  
