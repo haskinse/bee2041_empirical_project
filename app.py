@@ -10,6 +10,8 @@ st.write("""Taylor Swift is one of the most successful music artists of all time
 
 This blog looks at the musical features of her songs to see whether certain characteristics are linked to success. Are there patterns in which tracks become hugely popular while others don’t, or is her success about more than just the music?""")
 
+st.divider()
+
 st.header("Where did my data come from?")
 
 st.write("""Taylor Swift is a good artist to study because there’s an unusually large amount of data available on her individual tracks. While platforms like Spotify no longer allow public access to detailed audio features such as tempo, key and energy, her dedicated fanbase means this information is still available at the song level. This allows for a much more detailed analysis than would be possible for most artists.
