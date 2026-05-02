@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title = "What Makes a Taylor Swift Song Successful?", page_icon = "🎵", layout = "wide")
+#st.set_page_config(page_title = "What Makes a Taylor Swift Song Successful?", page_icon = "🎵", layout = "wide")
 
 TEXT_WIDTH = 750
 
