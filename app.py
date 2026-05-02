@@ -132,16 +132,5 @@ elif feature == "Valence":
 
 st.header("Which songs have the most listeners?")
 
-top_n = st.slider(
-    "Choose how many top songs to show:",
-    min_value=10,
-    max_value=220,
-    value=20,
-    step=10,
-    key="top_tracks_slider"
-)
-
-st.image(
-    f"output/figures/commercial_success/top_tracks/top_{top_n}_track_listens.png",
-    use_container_width=True
-)
+values = st.slider("Select a range of values", min_value=0.0, max_value=100.0, value=(25.0, 75.0))
+st.write("Selected range:", values)
