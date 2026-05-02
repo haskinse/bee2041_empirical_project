@@ -34,7 +34,7 @@ st.write("""The most successful album by a clear margin is 1989, with just under
 
 More broadly, album success looks fairly consistent across Swift’s career. While earlier albums tend to have higher total unit counts, they have also had more time to build up certifications. Because of this, it is hard to say that earlier music was necessarily more successful, as it may simply reflect how long it has been out.""")
 
-st.image("output/figures/commercial_success/total_units_bar.png", caption="My chart")
+st.image("output/figures/commercial_success/total_units_bar.png")
 
 st.divider()
 
@@ -44,7 +44,7 @@ st.write("""Looking at individual tracks, a small number of songs dominate total
 
 Among the very top songs, 1989 stands out in particular, although there is still a fairly balanced spread across albums overall. As before, older songs have had more time to build up listens, so this likely explains part of the pattern.""")
 
-st.image("output/figures/commercial_success/top_20_track_listens.png", caption="My chart")
+st.image("output/figures/commercial_success/top_20_track_listens.png")
 
 st.divider()
 
