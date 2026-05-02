@@ -18,11 +18,15 @@ st.write("""Taylor Swift is a good artist to study because there’s an unusuall
 
 The data for this project comes from a mix of sources. Album-level success data was scraped from Wikipedia, while track-specific features were taken from a Kaggle dataset. Tracks were then standardised and matched with Spotify data to ensure accuracy, before being combined with play count and listener data from Last.fm.""")
 
-st.header("What is 'success'?")
+st.divider()
+
+st.header("How should we define success?")
 
 st.write("""It’s hard to definitively define what ‘success’ means for a musical artist, and therefore how it should be measured. There are a variety of possible metrics. Some are quantitative, such as commercial success or number of awards, while others are more qualitative, like cultural impact or recognition. For example, while Taylor Swift’s albums are often extremely commercially successful, it could be argued that other projects, such as Charli XCX’s Brat, have had a more intense cultural impact.
 
 In this project, success is measured in two ways. At the album level, it is measured using units sold (from Wikipedia), while at the track level it is measured using listener and play counts from Last.fm. These metrics make success easier to quantify, and using multiple measures gives a more balanced view. However, this approach still has limitations, as it may miss more nuanced aspects of success, such as cultural impact or critical reception.""")
+
+st.divider()
 
 st.header("Which of Taylor Swift’s albums have been the most successful?")
 
@@ -32,6 +36,8 @@ More broadly, album success looks fairly consistent across Swift’s career. Whi
 
 st.image("output/figures/commercial_success/total_units_bar.png", caption="My chart")
 
+st.divider()
+
 st.header("Which of Taylor Swift’s songs have been the most successful?")
 
 st.write("""Looking at individual tracks, a small number of songs dominate total listeners, while the majority receive far fewer. This creates a clear “long tail” pattern, where only a few songs become extremely large hits.
@@ -39,6 +45,8 @@ st.write("""Looking at individual tracks, a small number of songs dominate total
 Among the very top songs, 1989 stands out in particular, although there is still a fairly balanced spread across albums overall. As before, older songs have had more time to build up listens, so this likely explains part of the pattern.""")
 
 st.image("output/figures/commercial_success/top_20_track_listens.png", caption="My chart")
+
+st.divider()
 
 st.header("How have the musical features of Taylor Swift’s music changed over time?")
 
@@ -80,6 +88,8 @@ elif feature == "Tempo":
 
 elif feature == "Valence":
     st.image("output/figures/track_feature_time/track_valence_time.png", width = 500)
+
+st.divider()
 
 st.header("How are these features related to success?")
 
