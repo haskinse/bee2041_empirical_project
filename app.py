@@ -38,6 +38,18 @@ st.image("output/figures/commercial_success/total_units_bar.png")
 
 st.divider()
 
+st.header("Which songs have the most listeners?")
+
+st.write("""Looking at individual tracks, a small number of songs dominate total listeners, while the majority receive far fewer. This creates a clear “long tail” pattern, where only a few songs become extremely large hits.
+
+Among the very top songs, 1989 stands out in particular, although there is still a fairly balanced spread across albums overall. As before, older songs have had more time to build up listens, so this likely explains part of the pattern.""")
+
+top_n = st.slider("Choose how many top songs to show:", min_value = 10, max_value = 220, value = 20, step = 10, key = "top_tracks_slider")
+
+st.image(f"output/figures/commercial_success/top_tracks/top_{top_n}_track_listens.png)
+
+st.divider()
+
 st.header("How have the musical features of Taylor Swift’s music changed over time?")
 
 st.write("""Taylor Swift is often described as a “chameleon” because she’s constantly shifting her sound and genre. Her earlier albums, like Taylor Swift and Fearless, are clearly country, while albums like 1989 and Red move much more into pop. More recent work explores indie, folk-pop and alternative styles.
@@ -119,19 +131,3 @@ elif feature == "Tempo":
 
 elif feature == "Valence":
     st.image("output/figures/track_feature_success/track_valence_success.png")
-
-st.header("Which songs have the most listeners?")
-
-top_n = st.slider(
-    "Choose how many top songs to show:",
-    min_value=10,
-    max_value=220,
-    value=20,
-    step=10,
-    key="top_tracks_slider"
-)
-
-st.image(
-    f"output/figures/commercial_success/top_tracks/top_{top_n}_track_listens.png",
-    use_container_width=True
-)
