@@ -2,27 +2,27 @@ import streamlit as st
 
 #st.set_page_config(page_title = "What Makes a Taylor Swift Song Successful?", page_icon = "🎵", layout = "wide")
 
-TEXT_WIDTH = 750
-
 st.title("What Makes a Taylor Swift Song Successful?")
+
+st.subheader("Exploring the data behind her muscial success")
 
 st.write("""Taylor Swift is one of the most successful music artists of all time. She’s sold over 100 million album units, multiple of her songs have passed one billion streams, and she’s the highest-grossing live music artist. But what actually drives her success? Is there something in the music itself that explains it, or is it something else entirely?
 
 This blog looks at the musical features of her songs to see whether certain characteristics are linked to success. Are there patterns in which tracks become hugely popular while others don’t, or is her success about more than just the music?""")
 
-st.subheader("Where did my data come from?")
+st.header("Where did my data come from?")
 
 st.write("""Taylor Swift is a good artist to study because there’s an unusually large amount of data available on her individual tracks. While platforms like Spotify no longer allow public access to detailed audio features such as tempo, key and energy, her dedicated fanbase means this information is still available at the song level. This allows for a much more detailed analysis than would be possible for most artists.
 
 The data for this project comes from a mix of sources. Album-level success data was scraped from Wikipedia, while track-specific features were taken from a Kaggle dataset. Tracks were then standardised and matched with Spotify data to ensure accuracy, before being combined with play count and listener data from Last.fm.""")
 
-st.subheader("What is 'success'?")
+st.header("What is 'success'?")
 
 st.write("""It’s hard to definitively define what ‘success’ means for a musical artist, and therefore how it should be measured. There are a variety of possible metrics. Some are quantitative, such as commercial success or number of awards, while others are more qualitative, like cultural impact or recognition. For example, while Taylor Swift’s albums are often extremely commercially successful, it could be argued that other projects, such as Charli XCX’s Brat, have had a more intense cultural impact.
 
 In this project, success is measured in two ways. At the album level, it is measured using units sold (from Wikipedia), while at the track level it is measured using listener and play counts from Last.fm. These metrics make success easier to quantify, and using multiple measures gives a more balanced view. However, this approach still has limitations, as it may miss more nuanced aspects of success, such as cultural impact or critical reception.""")
 
-st.subheader("Which of Taylor Swift’s albums have been the most successful?")
+st.header("Which of Taylor Swift’s albums have been the most successful?")
 
 st.write("""The most successful album by a clear margin is 1989, with just under 16 million certified units across the US and UK. Most of this comes from the original release, with a smaller contribution from the Taylor’s Version re release.
 
@@ -30,7 +30,7 @@ More broadly, album success looks fairly consistent across Swift’s career. Whi
 
 st.image("output/figures/commercial_success/total_units_bar.png", caption="My chart")
 
-st.subheader("Which of Taylor Swift’s songs have been the most successful?")
+st.header("Which of Taylor Swift’s songs have been the most successful?")
 
 st.write("""Looking at individual tracks, a small number of songs dominate total listeners, while the majority receive far fewer. This creates a clear “long tail” pattern, where only a few songs become extremely large hits.
 
@@ -79,7 +79,7 @@ elif feature == "Tempo":
 elif feature == "Valence":
     st.image("output/figures/track_feature_time/track_valence_time.png", width = 500)
 
-st.header("How are these features related to success")
+st.header("How are these features related to success?")
 
 st.write("To explore whether musical features influence popularity, I plotted each feature against track success, measured using log listeners. If certain features consistently made songs more successful, these graphs should show clear upward or downward patterns.")
 
