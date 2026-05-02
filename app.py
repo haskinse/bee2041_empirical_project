@@ -141,8 +141,13 @@ elif feature == "Valence":
 
 st.divider()
 
-st.header("How correlated are the muscial features?")
+st.header("How correlated are muscial features?")
 
 st.image("output/figures/correlation_matrices/track_features_success.png")
 
+st.divider()
+
+st.header("Multiple Linear Regression")
+
+st.image("output/figures/regressions/scaled_track_coefficients.png")
 
