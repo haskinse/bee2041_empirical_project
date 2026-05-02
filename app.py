@@ -5,6 +5,7 @@ st.set_page_config(page_title = "What Makes a Taylor Swift Song Successful?", pa
 st.title("What Makes a Taylor Swift Song Successful?")
 st.write("Taylor Swift is one of the most successful music artists of all time. She’s sold over 100 million album units, multiple songs have passed one billion streams, and she’s the highest-grossing live music artist. But what actually drives that success? Is it something in the music itself, or is it something else entirely?")
 st.write("This blog looks at the musical features of her songs to see whether certain characteristics are linked to success. More specifically, it focuses on correlation rather than causation, asking whether patterns in the data can help explain why some tracks perform better than others.")
+st.image("IMG_0511.jpeg")
 
 st.divider()
 
