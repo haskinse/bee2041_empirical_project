@@ -1,13 +1,13 @@
-import streamlit as st
+import streamlit as st # import the streamlit library
 
-st.set_page_config(page_title = "What Makes a Taylor Swift Song Successful?", page_icon = "🎵")
+st.set_page_config(page_title = "What Makes a Taylor Swift Song Successful?", page_icon = "🎵") # Set page title and icon
 
-st.title("What Makes a Taylor Swift Song Successful?")
+st.title("What Makes a Taylor Swift Song Successful?") # write title and text
 st.write("Taylor Swift is one of the most successful music artists of all time. She’s sold over 100 million album units, multiple songs have passed one billion streams, and she’s the highest-grossing live music artist. But what actually drives that success? Is it something in the music itself, or is it something else entirely?")
 st.write("This blog looks at the musical features of her songs to see whether certain characteristics are linked to success. More specifically, it focuses on correlation rather than causation, asking whether patterns in the data can help explain why some tracks perform better than others.")
-st.image(".streamlit/taylor_swift.jpeg")
+st.image(".streamlit/taylor_swift.jpeg", caption = "Photo by Paolo Villanueva (@itspaolopv), used under Creative Commons licence") # show an image of taylor swift
 
-st.divider()
+st.divider() # add a divider between sections
 
 st.header("Where did my data come from?")
 st.write("Taylor Swift is a great artist to study because there’s an unusually large amount of data available on her individual tracks. While platforms like Spotify no longer allow public access to detailed audio features such as tempo, key and energy, her dedicated fanbase means this information is still available at the song level. That makes a much more detailed analysis possible than for most artists.")
