@@ -50,6 +50,5 @@ https://haskinse-bee2041empiricalproject.streamlit.app
 
 - This project was primarily coded using Google Colab  
 - The repository contains the raw and cleaned data, source code and outputs used in the final 
-
 - The data collection code requires API access (Spotify and Last.fm), which is not included in this repository. To run this code apart from the rest of the project API keys must be generated and put into the code from Spotify for developers and the Last.fm API.
 - Cleaned datasets are included, so the project can still be fully reproduced without re-running data collection 
