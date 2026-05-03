@@ -94,7 +94,7 @@ st.divider() # add a divider
 
 st.header("How are these features related to success?") # write a header and text
 st.write("In this case, log listeners are used as a measure of track success. Looking across the different musical features, most of the trend lines are close to flat, with no clear pattern suggesting that any one characteristic consistently drives success.")
-st.write("This points to a broader idea: Taylor Swift’s success doesn’t seem to come from any single feature. Instead, it’s likely the result of a combination of factors, many of which aren’t fully captured by these audio metrics alone.")
+st.write("This points to the broader idea that Taylor Swift’s success doesn’t seem to come from any single feature. Instead, it’s likely the result of a combination of factors, many of which aren’t fully captured by these audio metrics alone.")
 
 # use a drop down box to select feature, then map it onto the correct image to be displayed
 feature = st.selectbox("Choose a musical feature:", ["Acousticness", "Danceability", "Duration in Minutes", "Energy", "Explicit", "Instrumentalness", "Liveness", "Loudness", "Speechiness", "Tempo", "Valence"], key = "track_feature_success_selectbox")
