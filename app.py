@@ -28,7 +28,7 @@ st.divider() # add a divider between sections
 st.header("Which of Taylor Swift’s albums have been the most successful?") # add heading and text
 st.write("Taylor Swift’s most commercially successful album, by both sales and certified units, is 1989, followed by her second album, Fearless. When combined with the re-released Taylor’s Version, 1989 has over 20 million certified units and around $10 million in certified sales.")
 st.write("Looking at Wikipedia page length instead, Folklore comes out on top, although it’s closely followed by 1989. This suggests that despite slightly weaker commercial performance, Folklore may have had a stronger cultural impact or at least generated more discussion.")
-st.write("The most striking feature of the data, though, is how consistent her success has been across her career. Even her lowest-performing album, Evermore, still has over four million certified units, going 4× platinum in the United States. Unlike many other artists, Swift has largely avoided a true “flop era."")
+st.write("The most striking feature of the data, though, is how consistent her success has been across her career. Even her lowest-performing album, Evermore, still has over four million certified units, going 4× platinum in the United States. Unlike many other artists, Swift has largely avoided a true flop era.")
     
 metric = st.segmented_control("Choose success measure:", ["Units", "Sales", "Wikipedia Page Length"], default = "Units") # create a segmented control button
 
