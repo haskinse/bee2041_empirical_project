@@ -10,8 +10,8 @@ st.image(".streamlit/taylor_swift.jpeg", caption = "Photo by Paolo Villanueva (@
 st.divider() # add a divider between sections
 
 st.header("Where did my data come from?") # write heading and text
-st.write("Taylor Swift is a great artist to study because there’s an unusually large amount of data available on her individual tracks. While platforms like Spotify no longer allow public access to detailed audio features such as tempo, key and energy, her dedicated fanbase means this information is still available at the song level. That makes a much more detailed analysis possible than for most artists.")
-st.write("The data for this project comes from a mix of sources. Album-level success data was scraped from Wikipedia, while track features were taken from a Kaggle dataset. Tracks were then standardised and matched with Spotify data to improve consistency, before being combined with play count and listener data from Last.fm.")
+st.write("Taylor Swift is a particularly useful artist to study because there is an unusually large amount of data available at the level of individual songs. Although platforms like Spotify no longer provide public access to detailed audio features such as tempo, key, and energy, her dedicated fanbase has preserved much of this information elsewhere. This makes it possible to carry out a more detailed analysis than for most artists.")
+st.write("The dataset used in this project combines several sources. Album-level measures of commercial success were scraped from Wikipedia, while track-level features were obtained from a Kaggle dataset. These tracks were then cleaned and standardised before being matched with Spotify data to improve consistency. Finally, the dataset was enriched with play count and listener statistics from Last.fm.")
 
 st.divider() # add a divider between sections
 
