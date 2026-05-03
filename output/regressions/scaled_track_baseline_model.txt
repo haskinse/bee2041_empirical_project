@@ -1,0 +1,29 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          log_listeners   R-squared:                       0.054
+Model:                            OLS   Adj. R-squared:                  0.031
+Method:                 Least Squares   F-statistic:                     2.287
+Date:                Sun, 03 May 2026   Prob (F-statistic):             0.0475
+Time:                        13:46:28   Log-Likelihood:                -99.545
+No. Observations:                 205   AIC:                             211.1
+Df Residuals:                     199   BIC:                             231.0
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const           13.3540      0.028    479.058      0.000      13.299      13.409
+danceability     0.0587      0.031      1.923      0.056      -0.001       0.119
+loudness        -0.0515      0.031     -1.657      0.099      -0.113       0.010
+valence          0.0188      0.033      0.566      0.572      -0.047       0.084
+speechiness      0.0359      0.030      1.197      0.233      -0.023       0.095
+duration_min     0.0010      0.033      0.030      0.976      -0.063       0.065
+==============================================================================
+Omnibus:                        3.298   Durbin-Watson:                   1.123
+Prob(Omnibus):                  0.192   Jarque-Bera (JB):                3.182
+Skew:                           0.305   Prob(JB):                        0.204
+Kurtosis:                       2.983   Cond. No.                         1.98
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
