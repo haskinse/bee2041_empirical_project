@@ -25,7 +25,7 @@ st.divider() # add a divider between sections
 st.header("Which of Taylor Swift’s albums have been the most successful?") # add heading and text
 st.write("Taylor Swift’s most commercially successful album, by both sales and certified units, is 1989, followed by her second album, Fearless. When combined with the re-released Taylor’s Version, 1989 has over 20 million certified units and around $10 million in certified sales.")
 st.write("Looking at Wikipedia page length instead, Folklore comes out on top, although it’s closely followed by 1989. This suggests that despite slightly weaker commercial performance, Folklore may have had a stronger cultural impact or at least generated more discussion.")
-st.write("The most striking feature of the data, though, is how consistent her success has been across her career. Even her lowest-performing album, Evermore, still has over four million certified units, going 4× platinum in the United States. Unlike many other artists, Swift has largely avoided a true “flop era.")
+st.write("The most striking feature of the data, though, is how consistent her success has been across her career. Even her lowest-performing album, Evermore, still has over four million certified units, going 4× platinum in the United States. Unlike many other artists, Swift has largely avoided a true “flop era."")
     
 metric = st.segmented_control("Choose success measure:", ["Units", "Sales", "Wikipedia Page Length"], default = "Units") # create a segmented control button
 
@@ -134,7 +134,7 @@ elif feature == "Valence":
 
 st.divider() # add a divider
 
-st.header("How correlated are muscial features?") # write a header and text
+st.header("How correlated are musical features?") # write a header and text
 st.write("Looking at correlation coefficients between musical features and log listeners confirms what the graphs suggested: relationships are very weak, with values ranging from around -0.13 to 0.17. There’s no strong linear relationship between any single feature and success.")
 st.write("Looking at correlations between the features themselves, more expected patterns show up. Energy and loudness are strongly positively correlated, while loudness and acousticness are strongly negatively correlated. This is important for the regression, as high correlation between explanatory variables can make it harder to isolate their individual effects.")
 st.image("output/figures/correlation_matrix/track_features_success.png") # show the correlation matrix
@@ -150,8 +150,8 @@ st.write("There are also important limitations to this approach. With only aroun
 
 st.divider() # add a divider
 
-st.header("Conclusions") # add a header and text
+st.header("Conclusion") # add a header and text
 st.write("Overall, there’s very little evidence that any single musical feature drives the success of a Taylor Swift song. Across the analysis, relationships between features and listener numbers are consistently weak, and even when combining multiple variables in a regression, the effects remain small.")
-st.write("Instead, her success looks much more consistent and widespread. Both at the album and track level, there isn’t really a clear divide between “hits” and “failures”, but rather a large number of songs that all perform well. This suggests that her success is less about specific characteristics of individual songs, and more about broader factors.")
-st.write("These likely include timing, marketing, fanbase strength, and cultural relevance, which are not captured in the data used here but are likely to be closely linked to the musical characteristics that are observed. More importantly, even if stronger statistical relationships were found, this would not necessarily imply causality without a more robust research design.")
-st.write("Ultimately, Taylor Swift’s success doesn’t seem to come down to any one feature or formula. If anything, the consistency across her catalogue suggests that it’s the combination of factors around the music, rather than the measurable properties of the music itself, that matters most.")
+st.write("If anything, the most noticeable thing is how consistent her success is. Both at the album and track level, there isn’t really a clear divide between “hits” and “failures”, but rather a large number of songs that all perform well. This suggests that success is less about specific characteristics of individual songs, and more about broader factors.")
+st.write("These likely include things like timing, marketing, fanbase strength, and cultural relevance, which aren’t captured in the data used here but are probably closely linked to the musical characteristics that are observed. More importantly, even if stronger statistical relationships were found, this still wouldn’t imply causality without a more robust research design.")
+st.write("Overall, Taylor Swift’s success doesn’t seem to come down to any one feature or formula. If anything, it’s the consistency across her catalogue that stands out, suggesting it’s the combination of factors around the music, rather than the measurable properties of the music itself, that matters most.")
