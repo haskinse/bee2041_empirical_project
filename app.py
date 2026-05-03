@@ -137,7 +137,7 @@ st.divider() # add a divider
 st.header("How correlated are muscial features?") # write a header and text
 st.write("Looking at correlation coefficients between musical features and log listeners confirms what the graphs suggested: relationships are very weak, with values ranging from around -0.13 to 0.17. There’s no strong linear relationship between any single feature and success.")
 st.write("Looking at correlations between the features themselves, more expected patterns show up. Energy and loudness are strongly positively correlated, while loudness and acousticness are strongly negatively correlated. This is important for the regression, as high correlation between explanatory variables can make it harder to isolate their individual effects.")
-st.image("output/figures/correlation_matrices/track_features_success.png") # show the correlation matrix
+st.image("output/figures/correlation_matrix/track_features_success.png") # show the correlation matrix
 
 st.divider() # add a divider
 
