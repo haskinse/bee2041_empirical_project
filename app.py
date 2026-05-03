@@ -30,13 +30,13 @@ st.write("The most striking feature of the data, though, is how consistent her s
 metric = st.segmented_control("Choose success measure:", ["Units", "Sales", "Wikipedia Page Length"], default = "Units") # create a segmented control button
 
 if metric == "Units": # if units is picked show album units
-    st.image("output/figures/commercial_success/total_units_bar.png", use_container_width=True)
+    st.image("output/figures/commercial_success/total_units_stacked_bar.png", use_container_width=True)
 
 elif metric == "Sales": # if sales is picked show album sales
-    st.image("output/figures/commercial_success/total_sales_bar.png", use_container_width=True)
+    st.image("output/figures/commercial_success/total_sales_stacked_bar.png", use_container_width=True)
 
 elif metric == "Wikipedia Page Length": # if page length is picked show album page length
-    st.image("output/figures/commercial_success/page_length_bar.png", use_container_width=True)
+    st.image("output/figures/commercial_success/page_length_stacked_bar.png", use_container_width=True)
     
 st.divider() # add a divider
 
