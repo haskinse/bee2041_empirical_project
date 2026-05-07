@@ -46,14 +46,14 @@ st.divider() # add a divider
 st.header("Which songs have the most listeners?") # write header and text
 st.write("Unsurprisingly, the most popular songs tend to come from her most successful albums, with six of the top ten coming from *1989* and *Fearless*. Her most popular song by far, with around 1.8 million listeners, is *Blank Space*. Interestingly, two of the top ten come from *Folklore*, one of her less commercially successful albums, which highlights how strong her catalogue is overall.")
 st.image("output/figures/commercial_success/top_tracks/top_10_track_listeners_table.png") # show image of table of topp ten songs
-st.write("Looking at listener numbers across all of her songs, this consistency becomes even clearer. While there are standout tracks like Blank Space, most of her songs sit in a fairly tight range, with roughly 500,000 to 1,000,000 listeners. The spread of albums across the top-performing tracks reinforces this, showing that her success isn’t limited to just one era.")      
+st.write("Looking at listener numbers across all of her songs, this consistency becomes even clearer. While there are standout tracks like *Blank Space*, most of her songs sit in a fairly tight range, with roughly 500,000 to 1,000,000 listeners. The spread of albums across the top-performing tracks reinforces this, showing that her success isn’t limited to just one era.")      
 top_n = st.slider("Choose how many top songs to show:", min_value = 10, max_value = 220, value = 20, step = 10, key = "top_tracks_slider") # create a slider
 st.image(f"output/figures/commercial_success/top_tracks/top_{top_n}_track_listens.png") # show the image that corresponds to the number selected by the slider
 
 st.divider() # add a divider
 
 st.header("How have the musical features of Taylor Swift’s music changed over time?") # write header and text
-st.write("Taylor Swift is often described as a “chameleon” because she’s constantly shifting her sound and genre. Her earlier albums, like Taylor Swift and Fearless, are clearly country, while albums like 1989 and Red move much more into pop. More recent work explores indie, folk-pop and alternative styles.")
+st.write("Taylor Swift is often described as a “chameleon” because she’s constantly shifting her sound and genre. Her earlier albums, like *Taylor Swift* and *Fearless*, are clearly country, while albums like *1989* and *Red* move much more into pop. More recent work explores indie, folk-pop and alternative styles.")
 st.write("However, when you look at measurable track features, her music is more consistent over time than this might suggest. Key metrics like danceability, tempo and valence do vary between albums, but there’s no clear overall trend.")
 st.write("There are a couple of exceptions. The share of explicit tracks has increased in more recent albums, particularly from Folklore onwards. Acousticness also shows the biggest shifts between albums, reflecting how she moves between more stripped-back, acoustic sounds and more produced, studio-heavy tracks.")
 
@@ -138,7 +138,7 @@ elif feature == "Valence":
 st.divider() # add a divider
 
 st.header("How correlated are musical features?") # write a header and text
-st.write("Looking at correlation coefficients between musical features and log listeners confirms what the graphs suggested: relationships are very weak, with values ranging from around -0.13 to 0.17. There’s no strong linear relationship between any single feature and success.")
+st.write("Looking at correlation coefficients between musical features and log listeners confirms what the graphs suggested, relationships are very weak, with values ranging from around -0.13 to 0.17. There’s no strong linear relationship between any single feature and success.")
 st.write("Looking at correlations between the features themselves, more expected patterns show up. Energy and loudness are strongly positively correlated, while loudness and acousticness are strongly negatively correlated. This is important for the regression, as high correlation between explanatory variables can make it harder to isolate their individual effects.")
 st.image("output/figures/correlation_matrix/track_features_success.png") # show the correlation matrix
 
