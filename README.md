@@ -1,7 +1,7 @@
 # Empirical Project – What makes a Taylor Swift song successful?
 
 ## Overview
-This project examines what may drive the success of Taylor Swift’s music using track-level data. It combines multiple data sources which have been cleaned and cobined and uses statistical analysis, visualisation, and regression techniques to assess whether musical features are associated with success.
+This project examines what may drive the success of Taylor Swift’s music using track-level data. It combines multiple data sources which have been cleaned and merged and uses statistical analysis, visualisation, and regression techniques to assess whether musical features are associated with success.
 
 ## Blog
 The final blog can be accessed here:  
